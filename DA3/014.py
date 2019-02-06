@@ -20,6 +20,8 @@ homes = pd.read_excel('./home_data.xlsx')
 # plt.xticks(range(0,max(homes.sqft_living),500), fontsize=8, rotation=90)
 # plt.show()
 
-# 两列两列之间的相关性，范围[-1,1]
-# 1为完全相关，0为不相关，-1为负相关
-print(homes.corr())
+# 范围[-1,1]，1为完全相关，0为不相关，-1为负相关
+# 所有两列两列数据的相关性
+# print(homes.corr())
+# 指定两列数据的相关性
+print(homes.sqft_living.corr(homes.price))
