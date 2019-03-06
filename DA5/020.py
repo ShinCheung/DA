@@ -6,7 +6,7 @@ students = pd.read_excel('./Students_Duplicates.xlsx')
 # students.drop_duplicates(subset='Name', inplace=True, keep='last')
 # print(students)
 
-# 找出重复数据，dupe返回值为True为有重复数据，False为无重复数据
+# 找出重复数据，dupe返回值为True为有重复数据，False为无重复数据，subset为指定列
 dupe = students.duplicated(subset='Name')
 # 有没有重复数据，True为有
 # print(dupe.any())
