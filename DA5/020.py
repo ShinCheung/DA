@@ -9,6 +9,7 @@ students = pd.read_excel('./Students_Duplicates.xlsx')
 # 找出重复数据，dupe返回值为True为有重复数据，False为无重复数据，subset为指定列
 dupe = students.duplicated(subset='Name')
 # 有没有重复数据，True为有
+# print(dupe)
 # print(dupe.any())
 # 有多少重复数据
 # print(dupe.sum())
